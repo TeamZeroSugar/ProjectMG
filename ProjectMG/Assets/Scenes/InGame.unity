@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 1944016216}
   - component: {fileID: 1944016215}
   - component: {fileID: 1944016214}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 1978777659}
   - component: {fileID: 1978777664}
   - component: {fileID: 1978777665}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
