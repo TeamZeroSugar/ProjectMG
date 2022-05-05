@@ -1,1 +1,7 @@
 ProjectMG/Library/
+ProjectMG/Logs/
+ProjectMG/Temp/
+ProjectMG/.vs/
+ProjectMG/Assembly-CSharp.csproj
+ProjectMG/obj/
+ProjectMG/UserSettings/
