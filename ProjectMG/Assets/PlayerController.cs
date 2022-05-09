@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Entity
 {
     Rigidbody2D rigid2D;
     public float jumpForce = 800.0f;
@@ -11,15 +11,23 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Init(10, 10, 10, 10);
         this.rigid2D = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    new private void Update()
     {
+        base.Update();
+
         Vector2 moveVelocity = new Vector2(
             Input.GetAxisRaw("Horizontal") * walkSpeed, 
             Input.GetKeyDown(KeyCode.Space) && rigid2D.velocity.y == 0 ? jumpForce : 0);
         rigid2D.AddForce(moveVelocity);
+
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            Debug.Log("a");
+            useSkill(0); 
+        }
     }
 
     private void FixedUpdate()

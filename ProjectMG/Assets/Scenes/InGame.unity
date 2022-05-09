@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 1944016216}
   - component: {fileID: 1944016215}
   - component: {fileID: 1944016214}
+  - component: {fileID: 1944016218}
   m_Layer: 7
   m_Name: enemy
   m_TagString: Untagged
@@ -663,6 +664,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944016218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944016213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb308b597c5831f428e5c883e413ef83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skills: []
 --- !u!1 &1956062022
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba54f783dbb6d4e4495468ee5d5d293e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skills:
+  - {fileID: 3022122631023507618, guid: d9f1ecdbd5483cb4ebf0cfb709b10586, type: 3}
   jumpForce: 800
   walkSpeed: 7
   maxVelocity: 7
